@@ -91,7 +91,7 @@ p {
   line-height: 30px;
 }
 .content-container {
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 .content {
   margin: 30px;
@@ -161,8 +161,11 @@ footer .social-links a {
   transition: all 100ms ease-in-out;
 }
 footer .social-links a:hover {
-  color: white;
+  color: var(--background-color);
   background: var(--branding-color);
+}
+.logo-large {
+  border-radius: 50%;
 }
 
 @media (max-width: 920px) {
