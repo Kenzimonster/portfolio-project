@@ -1,10 +1,10 @@
 :root{
-  --heading-font-family:"Kaushan Script", system-ui;
-  --default-font-family:"Alkatra", system-ui;
+  --heading-font-family: "Kaushan Script", system-ui;
+  --default-font-family: "Alkatra", system-ui;
   --branding-color: magenta;
   --secondary-color: rgb(95, 2, 95);
   --background-color: rgb(248, 227, 231);
-  --box-shadow:5px 5px 6px rgb(95, 2, 95);
+  --box-shadow: 5px 5px 6px rgb(95, 2, 95);
 }
 
 body{
@@ -33,14 +33,14 @@ h3{
   line-height: 36px;
 }
 .hero{
-  padding:180px 20px;
+  padding: 180px 20px;
   text-align: center;
   background: var(--background-color);
 }
 .btn-branding{
  font-family: var(--default-font-family); 
  color:#ffffff;
-  padding:15px 30px;
+  padding: 15px 30px;
   background: var(--branding-color);
   border-radius: 5px;
   font-size: 18px;
@@ -50,7 +50,7 @@ h3{
 .btn-branding-outline{
  font-family: var(--default-font-family); 
  color: var(--branding-color) !important;
-  padding:15px 30px;
+  padding: 15px 30px;
   background: #ffffff;
   border: 1px  solid var(--branding-color) !important;
   border-radius: 5px;
@@ -62,7 +62,7 @@ h3{
   color: var(--secondary-color);
 }
 .project-description{
-  padding:100px 60px 0px;
+  padding: 100px 60px 0px;
 }
 .img-container{
   background: var(--background-color);
@@ -70,18 +70,39 @@ h3{
 }
 .img-display{
   border-radius: 5px;
-  margin:40px auto;
+  margin: 40px auto;
   display: block;
-  width:95%; 
+  width: 95%; 
+}
+.img-display-about{
+  border-radius: 10px;
+  margin: 40px auto;
+  display: block;
+  width: 98%; 
+  max-width: 560px;
 }
 p{
   font-size: 16px;
   line-height: 30px;
 }
+.about-section{
+  padding: 160px 20px;
+}
+.about-section-content{
+  margin: 30px;
+}
+.about-section h1{
+  font-size: 64px;
+  line-height: 80px;
+}
+.about-section h2{
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
 
 @media(max-width: 920px){
   .hero{
-    padding:80px 20px;
+    padding: 80px 20px;
   }
   h1{
     font-size: 44px;
@@ -95,8 +116,12 @@ p{
     text-align: center;
   }
   .btn-branding-outline{
-    display:block;
+    display: block;
     max-width: 60%;
-    margin:0px auto;
+    margin: 0px auto;
+  }
+  .about-section{
+    text-align: center;
+    padding: 0;
   }
 }
