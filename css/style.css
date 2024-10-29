@@ -6,6 +6,7 @@
   --background-color: rgb(248, 227, 231);
   --box-shadow:5px 5px 6px rgb(95, 2, 95);
 }
+
 body{
  font-family: var(--default-font-family);
 }
@@ -24,6 +25,7 @@ h1 {
 }
 h2{
   font-size: 64px;
+  color: var(--secondary-color);
 }
 h3{
   color: var(--secondary-color);
@@ -35,17 +37,66 @@ h3{
   text-align: center;
   background: var(--background-color);
 }
-  .btn-branding{
+.btn-branding{
  font-family: var(--default-font-family); 
  color:#ffffff;
   padding:15px 30px;
   background: var(--branding-color);
-  border-radius: 4px;
+  border-radius: 5px;
   font-size: 18px;
   line-height: 27px;
   box-shadow: var(--box-shadow);
-  box-shadow: ;
+}
+.btn-branding-outline{
+ font-family: var(--default-font-family); 
+ color: var(--branding-color) !important;
+  padding:15px 30px;
+  background: #ffffff;
+  border: 1px  solid var(--branding-color) !important;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 27px;
+  box-shadow: var(--box-shadow);
 }
 .nicname{
   color: var(--secondary-color);
+}
+.project-description{
+  padding:100px 60px 0px;
+}
+.img-container{
+  background: var(--background-color);
+  border-radius: 7px;
+}
+.img-display{
+  border-radius: 5px;
+  margin:40px auto;
+  display: block;
+  width:95%; 
+}
+p{
+  font-size: 16px;
+  line-height: 30px;
+}
+
+@media(max-width: 920px){
+  .hero{
+    padding:80px 20px;
+  }
+  h1{
+    font-size: 44px;
+    line-height: 2;
+  }
+  h2{
+    font-size: 44px;
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  .btn-branding-outline{
+    display:block;
+    max-width: 60%;
+    margin:0px auto;
+  }
 }
