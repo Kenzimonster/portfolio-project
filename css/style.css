@@ -1,2 +1,51 @@
-p{ font-family: "Alkatra", system-ui;}
-h1{ font-family: "Kaushan Script", system-ui;}
+:root{
+  --heading-font-family:"Kaushan Script", system-ui;
+  --default-font-family:"Alkatra", system-ui;
+  --branding-color: magenta;
+  --secondary-color: rgb(95, 2, 95);
+  --background-color: rgb(248, 227, 231);
+  --box-shadow:5px 5px 6px rgb(95, 2, 95);
+}
+body{
+ font-family: var(--default-font-family);
+}
+.hero p{ 
+  color: var(--secondary-color);
+ font-size: 36px;
+ line-height: 54px;
+ font-weight: 700;
+}
+h1, h2{
+  font-family: var(--heading-font-family);
+}
+h1 {
+  font-size: 96px;
+  line-height: 128px;
+}
+h2{
+  font-size: 64px;
+}
+h3{
+  color: var(--secondary-color);
+  font-size: 24px;
+  line-height: 36px;
+}
+.hero{
+  padding:180px 20px;
+  text-align: center;
+  background: var(--background-color);
+}
+  .btn-branding{
+ font-family: var(--default-font-family); 
+ color:#ffffff;
+  padding:15px 30px;
+  background: var(--branding-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  box-shadow: var(--box-shadow);
+  box-shadow: ;
+}
+.nicname{
+  color: var(--secondary-color);
+}
